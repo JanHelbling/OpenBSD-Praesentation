@@ -88,3 +88,6 @@ OpenBSD:
   * OpenBSD hat diverse Technologien um das System vor Overflow-Angriffen zu schuetzen.
   * OpenBSD patcht Pakete bevor sie verfuegbar fuer die Installation sind.
   * OpenBSD ueberprueft den Code kontinuierlich auf Sicherheit.
+  * Secure by default
+  * Spectre, Meltdown, und alle Sicherheitsfunktionen bekommst du neverever ausgeschaltet
+  * ASLR, W^X, RETGUARD, arc4random, Otto's malloc, RELRO, PIE, fork+exec, library relinking, trapsleds, guard pages, ROP gadget reduction, privsep, privdrop,...
