@@ -90,4 +90,7 @@ OpenBSD:
   * OpenBSD ueberprueft den Code kontinuierlich auf Sicherheit.
   * Secure by default
   * Spectre, Meltdown, und alle Sicherheitsfunktionen bekommst du neverever ausgeschaltet
-  * ASLR, W^X, RETGUARD, arc4random, Otto's malloc, RELRO, PIE, fork+exec, library relinking, trapsleds, guard pages, ROP gadget reduction, privsep, privdrop,...
+  * ASLR: Address Space Layout Randomizationist eine Technik, die die Ausnutzung von Sicherheitsluecken in Computersystemen erschwert. Durch ASLR werden Adressbereiche den Programmen auf zuaelliger Basis zugewiesen, wodurch die Zuweisung der Adressbereiche eines Programms praktisch nicht mehr vorhersagbar ist. Dies soll Angriffe durch Pufferueberlauf erschweren.
+  * W^X: Es handelt sich um eine Speicherschutzrichtlinie, bei der jede Seite im Adressraum eines Prozesses oder Kernels entweder beschreibbar oder ausfuehrbar sein kann, jedoch nicht beides
+  * RETGUARD: Dieser Sicherheitsmechanismus verwendet die Funktion zufaellige Cookies zum Schutz des Zugriffs auf Funktionsrueckgabeanweisungen mt die bewirken, dass die Integriaet der Ruecksprungadresse geschuetzt ist und funktionsrueckgabeanweisungen sind in ROP-Gadgets schwieriger zu verwenden.
+  * arc4random, Otto's malloc, RELRO, PIE, fork+exec, library relinking, trapsleds, guard pages, ROP gadget reduction, privsep, privdrop,...
